@@ -20,6 +20,7 @@ In this work it was necessary to write software code for a ATmega32 microcontrol
 - 0x04 - read input registers;
 - 0x05 - write a coil;
 - 0x10 - write holding registers.
+
 The holding registers are used to hold serial number and for 4 bytes for user data. Input registers hold 2 integer words, the first is data for current voltage level calculated by using ADC code and another for current temperature from the same ADC code. The timer-counter #2 is used to support Modbus timings and Timer-counter 1 to update ADC code periodically.
 
 ## Demonstration <a name="demo"></a>
